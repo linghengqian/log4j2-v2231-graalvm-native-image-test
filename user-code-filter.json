@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {"excludeClasses": "**"},
+    {"includeClasses": "org.apache.logging.log4j.**"},
+    {"includeClasses": "org.apache.log4j.**"}
+  ],
+  "regexRules": [
+  ]
+}

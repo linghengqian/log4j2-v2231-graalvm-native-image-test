@@ -18,7 +18,8 @@ cd ../
 git clone git@github.com:linghengqian/log4j2-v2231-graalvm-native-image-test.git
 cd ./log4j2-v2231-graalvm-native-image-test/
 sdk use java 22.0.2-graalce
-./mvnw clean test
+./mvnw -PgenerateMetadata -DskipNativeTests -e -T1C clean test native:metadata-copy
+./mvnw -PnativeTestInHive -T1C -e clean test
 ```
 
 - Log as follows.
