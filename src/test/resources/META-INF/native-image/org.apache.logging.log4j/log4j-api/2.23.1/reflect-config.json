@@ -1432,9 +1432,5 @@
 {
   "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
   "name":"org.apache.logging.log4j.web.appender.ServletAppender"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.util.OsgiServiceLocator"},
-  "name":"org.osgi.framework.FrameworkUtil"
 }
 ]
