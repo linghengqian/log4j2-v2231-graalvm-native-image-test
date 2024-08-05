@@ -12,6 +12,7 @@ sdk install maven
 git clone git@github.com:linghengqian/hive.git -b log4j-bump
 cd ./hive/
 mvn clean install -DskipTests
+mvn clean package -pl packaging -DskipTests -Pdocker
 cd ../
 
 git clone git@github.com:linghengqian/log4j2-v2231-graalvm-native-image-test.git
