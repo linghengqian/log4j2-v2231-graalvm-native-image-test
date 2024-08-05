@@ -6,6 +6,7 @@
     {"includeClasses": "java.util.ServiceLoader"},
     {"excludeClasses": "javax.**"},
     {"excludeClasses": "jdk.**"},
+    {"excludeClasses": "org.apache.hadoop.**"},
     {"excludeClasses": "sun.**"}
   ],
   "regexRules": [

@@ -46,38 +46,6 @@
 },
 {
   "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.llap.log.LlapRandomAccessFileAppender"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.ql.log.HiveEventCounter"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.ql.log.HushableRandomAccessFileAppender"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.ql.log.LogDivertAppender$NameFilter"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.ql.log.LogDivertAppenderForTest$TestFilter"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.ql.log.NullAppender"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.ql.log.PidFilePatternConverter"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
-  "name":"org.apache.hadoop.hive.ql.log.SlidingFilenameRolloverStrategy"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.config.plugins.util.PluginRegistry"},
   "name":"org.apache.log4j.builders.appender.AsyncAppenderBuilder"
 },
 {
