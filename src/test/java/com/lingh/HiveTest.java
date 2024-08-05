@@ -4,6 +4,7 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.awaitility.Awaitility;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledInNativeImage;
 import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -16,6 +17,7 @@ import java.sql.Statement;
 import java.time.Duration;
 
 @SuppressWarnings({"SqlDialectInspection", "SqlNoDataSourceInspection", "unused", "resource"})
+@EnabledInNativeImage
 @Testcontainers
 public class HiveTest {
 
