@@ -32,7 +32,7 @@ GraalVM Native Image: Generating 'native-tests' (executable)...
 ========================================================================================================================
 Warning: Cannot register dynamic proxy for interface list: org.ehcache.shadow.org.terracotta.offheapstore.storage.portability.Portability, org.ehcache.shadow.org.terracotta.offheapstore.disk.persistent.PersistentPortability. Reason: Class org.ehcache.shadow.org.terracotta.offheapstore.storage.portability.Portability not found..
 Warning: Cannot register dynamic proxy for interface list: org.ehcache.shadow.org.terracotta.offheapstore.storage.portability.WriteBackPortability, org.ehcache.shadow.org.terracotta.offheapstore.disk.persistent.PersistentPortability. Reason: Class org.ehcache.shadow.org.terracotta.offheapstore.storage.portability.WriteBackPortability not found..
-[1/8] Initializing...                                                                                   (23.9s @ 0.94GB)
+[1/8] Initializing...                                                                                   (18.0s @ 0.92GB)
  Java version: 22.0.2+9, vendor version: GraalVM CE 22.0.2+9.1
  Graal compiler: optimization level: b, target machine: x86-64-v3
  C compiler: gcc (linux, x86_64, 11.4.0)
@@ -46,7 +46,7 @@ Warning: Cannot register dynamic proxy for interface list: org.ehcache.shadow.or
  - '-H:ReflectionConfigurationResources': Use a reflect-config.json in your META-INF/native-image/<groupID>/<artifactID> directory instead. (origin(s): 'META-INF/native-image/io.grpc.netty.shaded.io.netty/transport/native-image.properties' in 'file:///home/linghengqian/.m2/repository/io/grpc/grpc-netty-shaded/1.51.0/grpc-netty-shaded-1.51.0.jar')
 ------------------------------------------------------------------------------------------------------------------------
 Build resources:
- - 10.19GB of memory (47.4% of 21.50GB system memory, determined at start)
+ - 12.12GB of memory (56.4% of 21.50GB system memory, determined at start)
  - 16 thread(s) (100.0% of 16 available processor(s), determined at start)
 [junit-platform-native] Running in 'test listener' mode using files matching pattern [junit-platform-unique-ids*] found in folder [/home/linghengqian/TwinklingLiftWorks/git/public/log4j2-v2231-graalvm-native-image-test/target/test-ids] and its subfolders.
 SLF4J: Class path contains multiple SLF4J bindings.
@@ -54,26 +54,26 @@ SLF4J: Found binding in [jar:file:/home/linghengqian/.m2/repository/org/apache/l
 SLF4J: Found binding in [jar:file:/home/linghengqian/.m2/repository/org/slf4j/slf4j-reload4j/1.7.36/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
-[2/8] Performing analysis...  [******]                                                                  (60.7s @ 4.16GB)
-   32,728 reachable types   (84.4% of   38,777 total)
-   60,523 reachable fields  (62.1% of   97,528 total)
-  174,683 reachable methods (55.5% of  314,543 total)
+[2/8] Performing analysis...  [******]                                                                  (33.0s @ 6.75GB)
+   32,724 reachable types   (84.4% of   38,773 total)
+   60,523 reachable fields  (62.1% of   97,527 total)
+  174,684 reachable methods (55.5% of  314,549 total)
    11,500 types, 1,871 fields, and 7,689 methods registered for reflection
-      114 types,   212 fields, and   185 methods registered for JNI access
+      112 types,   212 fields, and   185 methods registered for JNI access
         4 native libraries: dl, pthread, rt, z
-[3/8] Building universe...                                                                              (11.9s @ 3.76GB)
-[4/8] Parsing methods...      [**]                                                                       (4.5s @ 4.37GB)
-[5/8] Inlining methods...     [****]                                                                     (3.7s @ 4.74GB)
-[6/8] Compiling methods...    [*****]                                                                   (31.3s @ 3.99GB)
-[7/8] Laying out methods...   [****]                                                                    (13.5s @ 4.88GB)
-[8/8] Creating image...       [***]                                                                      (9.1s @ 5.49GB)
+[3/8] Building universe...                                                                               (8.7s @ 4.44GB)
+[4/8] Parsing methods...      [**]                                                                       (2.7s @ 5.54GB)
+[5/8] Inlining methods...     [****]                                                                     (1.9s @ 5.40GB)
+[6/8] Compiling methods...    [****]                                                                    (18.7s @ 3.98GB)
+[7/8] Laying out methods...   [***]                                                                     (10.0s @ 4.59GB)
+[8/8] Creating image...       [***]                                                                      (7.4s @ 5.17GB)
   81.84MB (50.35%) for code area:   103,141 compilation units
-  71.21MB (43.81%) for image heap:  647,176 objects and 342 resources
+  71.21MB (43.81%) for image heap:  647,213 objects and 341 resources
    9.48MB ( 5.83%) for other data
- 162.53MB in total
+ 162.52MB in total
 ------------------------------------------------------------------------------------------------------------------------
 Top 10 origins of code area:                                Top 10 object types in image heap:
-  16.10MB java.base                                           25.95MB byte[] for code metadata
+  16.10MB java.base                                           25.94MB byte[] for code metadata
   15.80MB hive-exec-4.1.0-SNAPSHOT.jar                        10.40MB byte[] for java.lang.String
    6.05MB java.xml                                             9.19MB java.lang.Class
    5.17MB testcontainers-1.20.1.jar                            6.46MB java.lang.String
@@ -82,15 +82,15 @@ Top 10 origins of code area:                                Top 10 object types 
    2.36MB java.desktop                                         1.98MB byte[] for reflection metadata
    1.95MB jackson-databind-2.16.1.jar                          1.36MB java.lang.String[]
    1.91MB hadoop-common-3.3.6.jar                              1.16MB c.o.svm.core.hub.DynamicHub$ReflectionMetadata
-   1.88MB mssql-jdbc-6.2.1.jre7.jar                            1.12MB byte[] for general heap data
-  23.77MB for 129 more packages                                8.86MB for 5020 more object types
+   1.88MB mssql-jdbc-6.2.1.jre7.jar                            1.11MB byte[] for general heap data
+  23.77MB for 129 more packages                                8.86MB for 5022 more object types
 ------------------------------------------------------------------------------------------------------------------------
 Recommendations:
  AWT:  Use the tracing agent to collect metadata for AWT.
  HEAP: Set max heap for improved and more predictable memory usage.
  CPU:  Enable more CPU features with '-march=native' for improved performance.
 ------------------------------------------------------------------------------------------------------------------------
-                       17.3s (10.3% of total time) in 467 GCs | Peak RSS: 7.50GB | CPU load: 9.65
+                       10.3s (9.6% of total time) in 191 GCs | Peak RSS: 9.80GB | CPU load: 8.60
 ------------------------------------------------------------------------------------------------------------------------
 Build artifacts:
  /home/linghengqian/TwinklingLiftWorks/git/public/log4j2-v2231-graalvm-native-image-test/target/libawt.so (jdk_library)
@@ -103,12 +103,12 @@ Build artifacts:
  /home/linghengqian/TwinklingLiftWorks/git/public/log4j2-v2231-graalvm-native-image-test/target/liblcms.so (jdk_library)
  /home/linghengqian/TwinklingLiftWorks/git/public/log4j2-v2231-graalvm-native-image-test/target/native-tests (executable)
 ========================================================================================================================
-Finished generating 'native-tests' in 2m 45s.
+Finished generating 'native-tests' in 1m 46s.
 [INFO] Executing: /home/linghengqian/TwinklingLiftWorks/git/public/log4j2-v2231-graalvm-native-image-test/target/native-tests --xml-output-dir /home/linghengqian/TwinklingLiftWorks/git/public/log4j2-v2231-graalvm-native-image-test/target/native-test-reports -Djunit.platform.listeners.uid.tracking.output.dir=/home/linghengqian/TwinklingLiftWorks/git/public/log4j2-v2231-graalvm-native-image-test/target/test-ids
 JUnit Platform on Native Image - report
 ----------------------------------------
 
-2024-08-05T05:18:53.726155Z main ERROR Unable to load services for service class org.apache.logging.log4j.spi.Provider java.lang.InternalError: com.oracle.svm.core.jdk.UnsupportedFeatureError: Defining hidden classes at runtime is not supported.
+2024-08-05T11:42:17.620630Z main ERROR Unable to load services for service class org.apache.logging.log4j.spi.Provider java.lang.InternalError: com.oracle.svm.core.jdk.UnsupportedFeatureError: Defining hidden classes at runtime is not supported.
         at java.base@22.0.2/java.lang.invoke.InnerClassLambdaMetafactory.generateInnerClass(InnerClassLambdaMetafactory.java:367)
         at java.base@22.0.2/java.lang.invoke.InnerClassLambdaMetafactory.spinInnerClass(InnerClassLambdaMetafactory.java:289)
         at java.base@22.0.2/java.lang.invoke.InnerClassLambdaMetafactory.buildCallSite(InnerClassLambdaMetafactory.java:221)
@@ -205,14 +205,14 @@ Caused by: com.oracle.svm.core.jdk.UnsupportedFeatureError: Defining hidden clas
         at java.base@22.0.2/java.lang.invoke.InnerClassLambdaMetafactory.generateInnerClass(InnerClassLambdaMetafactory.java:364)
         ... 87 more
 
-2024-08-05T05:18:53.726681Z main ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2024-08-05T11:42:17.621098Z main ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 testhivedrivertable
 key     int
 value   string
 com.lingh.HiveTest > test() SUCCESSFUL
 
 
-Test run finished after 24163 ms
+Test run finished after 19463 ms
 [         2 containers found      ]
 [         0 containers skipped    ]
 [         2 containers started    ]
@@ -229,8 +229,8 @@ Test run finished after 24163 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  03:18 min (Wall Clock)
-[INFO] Finished at: 2024-08-05T13:19:17+08:00
+[INFO] Total time:  02:11 min (Wall Clock)
+[INFO] Finished at: 2024-08-05T19:42:37+08:00
 [INFO] ------------------------------------------------------------------------
 
 ```

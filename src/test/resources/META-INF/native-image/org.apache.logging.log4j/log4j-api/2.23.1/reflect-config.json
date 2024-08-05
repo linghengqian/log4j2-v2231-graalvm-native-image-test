@@ -1,45 +1,5 @@
 [
 {
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[B"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[C"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[D"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[F"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[I"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[J"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[Ljava.lang.String;"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[Ljavax.management.openmbean.CompositeData;"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[S"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"[Z"
-},
-{
   "condition":{"typeReachable":"org.apache.logging.log4j.util.ServiceLoaderUtil"},
   "name":"java.util.ServiceLoader",
   "methods":[{"name":"load","parameterTypes":["java.lang.Class","java.lang.ClassLoader"] }]
