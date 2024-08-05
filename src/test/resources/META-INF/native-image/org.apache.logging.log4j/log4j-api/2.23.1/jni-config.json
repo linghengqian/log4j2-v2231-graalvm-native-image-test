@@ -6,25 +6,5 @@
 {
   "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
   "name":"[Lcom.sun.management.internal.DiagnosticCommandInfo;"
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"com.sun.management.internal.DiagnosticCommandArgumentInfo",
-  "methods":[{"name":"<init>","parameterTypes":["java.lang.String","java.lang.String","java.lang.String","java.lang.String","boolean","boolean","boolean","int"] }]
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"com.sun.management.internal.DiagnosticCommandInfo",
-  "methods":[{"name":"<init>","parameterTypes":["java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","boolean","java.util.List"] }]
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.util.NetUtils"},
-  "name":"java.lang.Boolean",
-  "methods":[{"name":"getBoolean","parameterTypes":["java.lang.String"] }]
-},
-{
-  "condition":{"typeReachable":"org.apache.logging.log4j.core.jmx.Server"},
-  "name":"java.util.Arrays",
-  "methods":[{"name":"asList","parameterTypes":["java.lang.Object[]"] }]
 }
 ]

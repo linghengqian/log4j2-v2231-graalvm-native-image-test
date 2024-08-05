@@ -1,6 +1,12 @@
 {
   "rules": [
-    {"includeClasses": "**"}
+    {"includeClasses": "**"},
+    {"excludeClasses": "com.**"},
+    {"excludeClasses": "java.**"},
+    {"includeClasses": "java.util.ServiceLoader"},
+    {"excludeClasses": "javax.**"},
+    {"excludeClasses": "jdk.**"},
+    {"excludeClasses": "sun.**"}
   ],
   "regexRules": [
   ]
