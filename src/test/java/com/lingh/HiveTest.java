@@ -2,6 +2,7 @@ package com.lingh;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.awaitility.Awaitility;
 import org.junit.jupiter.api.Test;
 import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.junit.jupiter.Container;
@@ -12,6 +13,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.Duration;
 
 @SuppressWarnings({"SqlDialectInspection", "SqlNoDataSourceInspection", "unused", "resource"})
 @Testcontainers
@@ -30,6 +32,10 @@ public class HiveTest {
         try (HikariDataSource hikariDataSource = new HikariDataSource(config);
              Connection connection = hikariDataSource.getConnection();
              Statement statement = connection.createStatement()) {
+            Awaitility.await().atMost(Duration.ofMinutes(1L)).ignoreExceptions().until(() -> {
+                hikariDataSource.getConnection().close();
+                return true;
+            });
             statement.execute("CREATE DATABASE demo_ds_0");
         }
         HikariConfig hikariConfig = new HikariConfig();

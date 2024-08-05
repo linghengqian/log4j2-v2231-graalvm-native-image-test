@@ -111,8 +111,8 @@
                                     <defaultMode>Conditional</defaultMode>
                                     <modes>
                                         <conditional>
-                                            <userCodeFilterPath>${user.dir}/test/native/native-image-filter/user-code-filter.json</userCodeFilterPath>
-                                            <extraFilterPath>${user.dir}/test/native/native-image-filter/extra-filter.json</extraFilterPath>
+                                            <userCodeFilterPath>${user.dir}/user-code-filter.json</userCodeFilterPath>
+                                            <extraFilterPath>${user.dir}/extra-filter.json</extraFilterPath>
                                             <parallel>true</parallel>
                                         </conditional>
                                     </modes>
@@ -121,7 +121,7 @@
                                             <stage>main</stage>
                                         </disabledStages>
                                         <merge>false</merge>
-                                        <outputDirectory>${user.dir}/reachability-metadata/src/main/resources/META-INF/native-image/org.apache.logging.log4j/log4j-api:2.23.1/</outputDirectory>
+                                        <outputDirectory>${user.dir}/src/test/resources/META-INF/native-image/org.apache.logging.log4j/log4j-api/2.23.1/</outputDirectory>
                                     </metadataCopy>
                                 </agent>
                             </configuration>
